@@ -1,0 +1,28 @@
+@if (actor) {
+    <div class="detalle">
+        <a [routerLink]="['/']" class="volver">Volver a la lista</a>
+        <img [src]="actor.imagen" [alt]="actor.nombre">
+        <h2>{{actor.nombre}}</h2>
+        <p class="universo">{{actor.universo}}</p>
+        <div class="datos">
+            <p><strong>Formato:</strong> {{actor.formato}}</p>
+            <p><strong>Años activo:</strong> {{actor.aniosActivo}}</p>
+        </div>
+        <div class="peliculas">
+            <h3>Películas / Series</h3>
+            <ul>
+                @for (peli of actor.peliculas; track peli) {
+                    <li>{{peli}}</li>
+                }
+            </ul>
+        </div>
+        <div class="plataformas">
+            <h3>Disponible en</h3>
+            @for (plataforma of actor.plataformas; track plataforma) {
+                <span class="chip">{{plataforma}}</span>
+            }
+        </div>
+    </div>
+} @else {
+    <p>Actor no encontrado.</p>
+}

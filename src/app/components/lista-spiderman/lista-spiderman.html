@@ -1,0 +1,10 @@
+<div class="grid">
+    @for (actor of actores; track actor.nombre){
+        <div class="Tarjeta" [routerLink]="['/spiderman', actor.nombre]">
+            <img [src]="actor.imagen" [alt]="actor.nombre">
+            <h2>{{actor.nombre}}</h2>
+            <p>{{actor.universo}}</p>
+            <span class="formato">{{actor.formato}}</span>
+        </div>
+    }
+</div>

@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { ListaJuegos } from './components/lista-juegos/lista-juegos';
-import { DetalleJuego } from './components/detalle-juego/detalle-juego';
+import { ListaSpiderman } from './components/lista-spiderman/lista-spiderman';
+import { DetalleSpiderman } from './components/detalle-spiderman/detalle-spiderman';
 
 export const routes: Routes = [
-    { path: '', component: ListaJuegos },
-    { path: 'juegos/:id', component: DetalleJuego },
+    { path: '', component: ListaSpiderman },
+    { path: 'spiderman/:nombre', component: DetalleSpiderman },
 ];

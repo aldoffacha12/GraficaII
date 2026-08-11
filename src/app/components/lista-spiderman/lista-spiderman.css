@@ -1,0 +1,32 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.Tarjeta {
+    background: #7f1d1d;
+    border-radius: 12px;
+    padding: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+.Tarjeta img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.formato {
+    display: inline-block;
+    margin-top: 8px;
+    background: #facc15;
+    color: #450a0a;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 20px;
+}

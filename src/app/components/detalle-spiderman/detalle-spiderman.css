@@ -1,0 +1,45 @@
+
+.detalle img {
+    width: 250px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.volver {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #facc15;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.universo {
+    color: #facc15;
+    font-style: italic;
+}
+
+.datos {
+    margin-top: 15px;
+}
+
+.peliculas {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.peliculas ul {
+    padding-left: 20px;
+}
+
+.peliculas li {
+    margin: 5px 0;
+}
+
+.plataformas {
+    margin-top: 20px;
+    text-align: left;
+}
+
+
