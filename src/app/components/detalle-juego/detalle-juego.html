@@ -1,0 +1,11 @@
+@if (juego) {
+    <div class="detalle">
+        <a [routerLink]="['/juegos']" class="volver">Volver a la lista</a>
+        <img src="{{juego.imagen}}" alt="{{juego.nombre}}">
+        <h2>{{juego.nombre}}</h2>
+        <p>Género: {{juego.genero}}</p>
+        <p>Plataforma: {{juego.plataforma}}</p>
+    </div>
+} @else {
+    <p>Juego no encontrado.</p>
+}

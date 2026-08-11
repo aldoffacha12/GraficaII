@@ -1,0 +1,10 @@
+<div class="grid">
+    @for (juego of juegos; track juego.id){
+        <div class="Tarjeta" [routerLink]="['/juego', juego.id]">
+            <img src="{{juego.imagen}}" alt="{{juego.nombre}}">
+            <h2>{{juego.nombre}}</h2>
+            <p>{{juego.genero}} . {{juego.plataforma}}</p>
+        </div>
+    }
+        
+</div>
